@@ -4,8 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-profile-pic',
   imports: [],
   templateUrl: './profile-pic.html',
-  styleUrl: './profile-pic.scss'
+  styleUrl: './profile-pic.scss',
 })
-export class ProfilePic {
-
-}
+export class ProfilePic {}
