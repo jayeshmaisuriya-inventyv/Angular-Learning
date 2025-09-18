@@ -1,0 +1,17 @@
+.account-settings{
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+  .user-profile-section{
+    background-color: darkgreen;
+    padding: 20px;
+    color: white;
+    border-radius: 8px;
+  }
+  .payment-info-section{
+     background-color: darkorchid;
+    padding: 20px;
+    color: white;
+    border-radius: 8px;
+  }
+}
