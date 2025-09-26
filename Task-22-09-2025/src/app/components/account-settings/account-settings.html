@@ -1,1 +1,26 @@
-<p>account-settings works!</p>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <h2>Account Setting</h2>
+
+      <div class="row">
+        <div class="col">
+          <app-parent-profile></app-parent-profile>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <app-user-bio></app-user-bio>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <h2>Subscription : <strong>{{ user().subscription }}</strong></h2>
+      <div class="row">
+        <div class="col">
+          <app-payment-info></app-payment-info>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

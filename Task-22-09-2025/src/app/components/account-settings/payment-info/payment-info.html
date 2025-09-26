@@ -1,1 +1,12 @@
-<p>payment-info works!</p>
+<div class="plan-section">
+  <h3>Subscription</h3>
+  <p>Plan: {{ user().planName }}</p>
+  <p>Status: Active</p>
+  <p>Type: <strong>{{ user().subscription }}</strong></p> <!-- ✅ new -->
+  <p>{{ user().customMessage }} {{ user().subscription }} !</p>
+</div>
+<div class="subscription-actions">
+  <button type="button" class="btn btn-primary" (click)="toggleSubscription()">
+    Switch to {{ user().subscription === 'Premium' ? 'Basic' : 'Premium' }}
+  </button>
+</div>
