@@ -1,0 +1,15 @@
+<h2>Product List</h2>
+@if (cartList()) {
+	<div class="row">
+		@for (product of cartList(); track product.id) {
+			<div class="col-4">
+				<div class="card p-2">
+					<h1>{{ product.name }}</h1>
+					<span>Price: {{ product.price }}</span>
+					<span class="d-block">Quantity: {{ product.quantity }}</span>
+					<button class="btn btn-primary" (click)="addToCart(product)">Add to Cart</button>
+				</div>
+			</div>
+		}
+	</div>
+}

@@ -1,0 +1,18 @@
+
+<h2>Cart</h2>
+@if (cartItems() && cartItems().length > 0) {
+  <ul>
+    @for (item of cartItems(); track item.id) {
+      <li>
+        {{ item.name }} - Quantity: {{ item.quantity }} - Price: {{ item.price * item.quantity }}
+        <button class="btn btn-danger" (click)="removeFromCart(item.id)">Remove</button>
+      </li>
+    }
+  </ul>
+  <div>
+    Total Items: {{ totalQuantity }}<br>
+    Total Price: {{ totalPrice }}
+  </div>
+} @else {
+  <p>No items in cart.</p>
+}
