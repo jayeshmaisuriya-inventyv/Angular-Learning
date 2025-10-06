@@ -6,7 +6,7 @@ import { StatusPipe } from '../../pipe/status-pipe';
 
 @Component({
   selector: 'app-task-list',
-  imports: [CommonModule, DatePipe, StatusPipe],
+  imports: [CommonModule, DatePipe, StatusPipe], // CommonModule provides lowercase pipe
   templateUrl: './task-list.html',
   styleUrl: './task-list.scss'
 })
